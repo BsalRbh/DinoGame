@@ -1,0 +1,41 @@
+body{
+    padding: 40px;
+}
+.frame{
+height: 300px;
+width: 1000px;
+border: black solid 1px;
+margin:auto;
+position: relative;
+}
+#dino{
+    position: absolute;
+    width: 100px;
+    top: 200px;
+    left: 20px;
+    
+}
+.jump{
+    animation: jump 0.5s linear infinite;
+}
+
+#bush{
+    position: absolute;
+    height: 50px;
+     top: 262px;
+     left: 950px; 
+     animation: bush-move 2s linear infinite;  
+
+}
+@keyframes bush-move {
+  from {left: 950px;}
+    to  {left: 0;}
+
+}
+@keyframes jump {
+    0% {top: 200px;}
+    30%{top: 100px;}
+    70%{top: 150px;}
+    100%{top: 200px;}
+    
+}
